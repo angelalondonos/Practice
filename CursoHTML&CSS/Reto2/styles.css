@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.one{
+    font-size: 1.8rem;
+    background-color: pink;
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    top: 4.1rem;
+    padding: 2.8rem;
+    border-radius: 2rem;
+}
+.two{
+    font-size: 1.6rem;
+    background-color: #fbdefe;
+    border: 0.2rem #C433D5 solid;
+    padding: 6rem;
+    border-radius: 2.6rem;
+}
