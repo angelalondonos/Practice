@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+footer{
+    background: pink;
+}
+
 .page-header{
     display: flex;
     flex-direction: row;
@@ -28,26 +32,35 @@
     margin: 5px;
 }
 
-.items{
-    width: 25%;
-    height: 100%;
-    background-color: #f3ccf3;
+.items, .content {
     display: inline-block;
-    padding: 0;
+    height: 76vh;
+}
+
+.items{
+    width: 30%;
+    background-color: rgb(88, 127, 153);
 }
 
 .item{
-    height: 180px;
-    margin: 1.5em;
+    height: 15vh;
+    margin: 3vh;
     background-color: pink;
     border-radius: 10px;
-    display: block;
-}
+} 
 
 .content{
     width: 75%;
-    height: 90%;
-    display: inline-block;
     background-color: rgb(191, 80, 99);
     position:absolute;
+} 
+
+.footer-social, .footer-info {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.footer-info {
+  position: absolute;
+  right: 1.5rem;
 }
