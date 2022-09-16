@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: pink;
+}
+
+.nav{
+    list-style: none;
+    margin-top:10px;
+    padding-left: 0;
+    align-items: center;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 5px;
+}
