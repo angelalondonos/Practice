@@ -1,11 +1,24 @@
+:root {
+    --primary-color: #003476;
+    --secundary-color: #b4d2f7;
+    --white: white;
+    --header-size: 4rem;
+    --font: 1.8rem;
+  }
+  
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 
 footer{
-    background: pink;
+    font-size: var(--font);
+    background: var(--primary-color);
+    color:var(--secundary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,7 +28,9 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: pink;
+    background: var(--primary-color);
+    color:var(--secundary-color);
+    font-size: var(--font);
 }
 
 .nav{
@@ -31,20 +46,21 @@ footer{
 
 .nav a{
     text-decoration: none;
-    color: aliceblue;
     margin: 5px;
+    color:var(--secundary-color);
 }
 
 .row{
     display: flex;
     flex-direction: row;
+    font-size: var(--font);
 }
 
 .items{
     display: flex;
     flex-direction: column;
     flex: 30%;
-    background: #b195f1b1;
+    background: var(--secundary-color);
     justify-content: space-around;
     align-items: center;
     padding: 2%;
@@ -53,18 +69,19 @@ footer{
 .item{
     width: 100%;
     height: 100px;
-    background: #e441d4b1;
     display: flex; 
     align-items: center;  
     justify-content: center; 
     border-radius: 10px;
     margin:10px;
+    color: var(--primary-color);
+    background: var(--white);
 }
 
 .content{
     flex: 70%;
-    background: #4ddca7b1;
     padding: 20px;
+    color: var(--primary-color);
 }
 
 .footer-social, .footer-info{
