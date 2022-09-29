@@ -57,6 +57,7 @@ footer{
 .items{
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--primary-color);
 }
 .item1, .item2, .item3{
     display: flex;
@@ -79,7 +80,7 @@ footer{
 .item3{
     background-color: var(--yellow-color);
 }
-.image-PlatziConf{
+.image{
     width: 400px;
     height: 200px;
 }

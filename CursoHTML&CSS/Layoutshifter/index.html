@@ -9,7 +9,9 @@
 </head>
 <body>
     <header class="page-header">
-        <img src="https://static.platzi.com/static/images/footer/logo.png" alt="Logo" class="logo">
+        <picture>
+            <img src="https://static.platzi.com/static/images/footer/logo.png" alt="Logo" class="logo">
+        </picture>
         <nav>
             <ul id="main-nav" class="nav">
                 <li><a href="">Home</a></li>
@@ -21,7 +23,11 @@
     </header>
     <div class="row">
         <section class="content">
-            <img src="https://static.platzi.com/media/meta_tags/og/CONF-OG.png" alt="Platzi Conf" class="image-PlatziConf">
+            <picture>
+                <source media="(min-width: 600px)" srcset="./images/medium.jpg" />
+                <img src="./images/small.jpg" alt="image" />
+            </picture>
+
             <p>Platzi es una plataforma latinoamericana de educación en línea.​ Fue fundada en 2014 por el ingeniero colombiano Freddy Vega y por el informático guatemalteco Christian Van Der Henst. Suscríbete a Platzi y únete al evento de tech online y presencial más importante de Latam. Asiste al ciclo de conferencias con líderes tech que te prepara para mejores oportunidades.</p>
         </section>
         <aside class="items">
