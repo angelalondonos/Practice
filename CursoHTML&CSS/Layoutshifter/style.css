@@ -3,6 +3,7 @@
     --secundary-color: #8C5CF2;
     --other-color:##30A8F2;
     --orange-color:#F26666;
+    --yellow-color:#F2CD5E;
     --white: white;
     --header-size: 4rem;
     --font: 1.8rem;
@@ -25,28 +26,33 @@ footer{
 }
 .page-header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: var(--primary-color);
+    align-items: center;
 }
-.title{
-    color:var(--white);
+.logo{
+    width: 100px;
+    height: 40px;
 }
 .nav{
     list-style: none;
     padding-left: 0;
-    align-items: center;
 }
 .nav li{
     display: inline;
 }
 .nav a{
     text-decoration: none;
-    margin: 5px;
+    margin: 10px;
     color:var(--white);
 }
 .content{
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
 }
 .items{
     display: flex;
@@ -61,8 +67,8 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.item1 title-course, .item2 title-course, .item3 title-course{
-    font-size: var(--font);
+.item1 title-course{
+    font-size: var(--header-size);
 }
 .item1{
     background-color: var(--secundary-color);
@@ -71,9 +77,42 @@ footer{
     background-color: var(--orange-color);
 }
 .item3{
-    background-color: var(--secundary-color);
+    background-color: var(--yellow-color);
 }
 .image-PlatziConf{
     width: 400px;
     height: 200px;
+}
+
+@media (min-width: 600px) {
+    .item1{
+        width: 50%;
+    }    
+    .item2{
+        width: 50%;
+    }  
+    .item3{
+        width: 100%;
+    } 
+    .page-header{
+        flex-direction: row;
+        justify-content: space-between;
+    }  
+}
+
+@media (min-width: 800px) {
+    .item1,.item2, .item3{
+        width: 100%;
+    } 
+    .items{
+        order:1;
+    }   
+    .content{
+        order:2;    
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
